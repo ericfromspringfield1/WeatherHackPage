@@ -1,1 +1,85 @@
-  
+  body {
+    margin: 5px;
+    font-size: 42px;
+    font-family: 'Turret Road', cursive;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#searchContainer {
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#searchContainer input {
+    width: 200px;
+}
+
+
+#searchContainer button {
+    background-color: rgb(1, 159, 198);
+    width: 75px;
+}
+
+.searchControl {
+    box-shadow: 2px 2px 5px black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+#weatherMain {
+    display: block;
+    margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+#weatherMain div {
+display: inline-block;
+}
+}
+
+#weatherDescriptionHeader {
+    font-size: 28px;
+    vertical-align: 50%;
+}
+
+#temperature {
+    font-size: 38px;
+    vertical-align: 25%;
+}
+
+.bottomDetails {
+    display: block;
+    font-size: 24px;
+    text-align: right;
+    padding: 5px;
+}
+
+.veryBottomDetails {
+    display: block;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: left;
+    padding: 5px;
+}
+
+#sunrise {
+    display: block;
+    background-color: rgba(255, 224, 50, 0.295);
+    margin-bottom: 5px;
+    
+}
+#sunset {
+    display: block;
+    background-color: rgba(240, 158, 6, 0.315);
+}
+
+hr {
+    margin-bottom: 15px;
+
+}
