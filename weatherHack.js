@@ -1,4 +1,3 @@
-let appId = 'c9867bcb23d64d9aa1d083b7af5ee342'
 let units = 'imperial'
 let searchMethod;
 
@@ -69,12 +68,12 @@ function init(resultFromServer) {
         let humidityElement = document.getElementById('humidity')
         let windSpeedElement = document.getElementById('windSpeed')
         let cityHeader = document.getElementById('cityHeader')
-        //let weatherIcon = document.getElementById('documentIconImg');
+        let weatherIcon = document.getElementById('documentIconImg');
         let dewpointElement = document.getElementById('dewpoint')
         let sunriseElement = document.getElementById('sunrise')
         let sunsetElement = document.getElementById('sunset')
         
-        //weatherIcon.src = `http://openweathermap.org/img/wn/${resultFromServer.weather[0].icon}.png`
+        weatherIcon.src = `http://api.weatherbit.io/img/wn/${resultFromServer.data[0].weather.icon}.png`
         
         
         let resultDescription = resultFromServer.data[0].weather.description;
